@@ -2,9 +2,12 @@
 // let name: string = "bruce wayne";
 // let age: number = 35;
 Object.defineProperty(exports, "__esModule", { value: true });
-const gettingParameter = (id) => {
-    return id;
+;
+const user = {
+    name: 'steave',
+    age: 26,
+    joinedOn: new Date()
 };
-console.log(gettingParameter('haai'));
-console.log(gettingParameter(122));
+// user.joinedOn = new Date();  not gonna work !
+console.log(user);
 //# sourceMappingURL=index.js.map

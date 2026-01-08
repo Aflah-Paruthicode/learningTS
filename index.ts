@@ -28,12 +28,31 @@
 
 // console.log(greetings('aflah'))
 
-type IdFieldTypes = string | number;
- const gettingParameter = (id : IdFieldTypes) :string | number => {
-
-    return id
- }
 
 
- console.log(gettingParameter('haai'))
-  console.log(gettingParameter(122))
+// type IdFieldTypes = string | number;
+//  const gettingParameter = (id : IdFieldTypes) :string | number => {
+
+//     return id
+//  }
+
+
+//  console.log(gettingParameter('haai'))
+//   console.log(gettingParameter(122))
+
+interface UserInterface {
+    name : string,
+    age : number,
+    readonly joinedOn : Date,
+};
+
+const user : UserInterface = {
+    name : 'steave',
+    age : 26,
+    joinedOn : new Date()
+}
+
+    // user.joinedOn = new Date();  not gonna work !
+
+
+console.log(user);
