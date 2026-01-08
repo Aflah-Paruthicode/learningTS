@@ -22,8 +22,18 @@
 // console.log(User)
 
 
-function greetings (greetMsg : string) : string {
-    return 'heey ' + greetMsg;
-}
+// function greetings (greetMsg : string) : string {
+//     return 'heey ' + greetMsg;
+// }
 
-console.log(greetings('aflah'))
+// console.log(greetings('aflah'))
+
+type IdFieldTypes = string | number;
+ const gettingParameter = (id : IdFieldTypes) :string | number => {
+
+    return id
+ }
+
+
+ console.log(gettingParameter('haai'))
+  console.log(gettingParameter(122))
