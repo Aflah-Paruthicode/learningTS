@@ -7,16 +7,23 @@
 
 // console.log(name,age,place)
 
-interface UserInterface {
-    favYt : string,
-    why : string,
-    createdby : number
-};
+// interface UserInterface {
+//     favYt : string,
+//     why : string,
+//     createdby : number
+// };
 
-let User:UserInterface = {
-    favYt : 'aflu tech',
-    why : 'felt funny + creative',
-    createdby : 2019
+// let User:UserInterface = {
+//     favYt : 'aflu tech',
+//     why : 'felt funny + creative',
+//     createdby : 2019
+// }
+
+// console.log(User)
+
+
+function greetings (greetMsg : string) : string {
+    return 'heey ' + greetMsg;
 }
 
-console.log(User)
+console.log(greetings('aflah'))
