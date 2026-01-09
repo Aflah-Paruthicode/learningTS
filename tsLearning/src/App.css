@@ -1,9 +1,8 @@
 * {
   margin: 0;
   padding: 0;
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-    "Lucida Sans", Arial, sans-serif;
-    background-image: url(https://w0.peakpx.com/wallpaper/518/1005/HD-wallpaper-vecna-in-stranger-things-4.jpg);
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  background-image: url(https://w0.peakpx.com/wallpaper/518/1005/HD-wallpaper-vecna-in-stranger-things-4.jpg);
   background-position: top;
   background-repeat: no-repeat;
   background-size: cover;
@@ -11,9 +10,9 @@
 }
 
 nav {
-  width:80%;
+  width: 80%;
   margin: 10px;
-  background: #000000e8;  
+  background: #000000e8;
   border-radius: 100px;
   border: rgba(255, 255, 255, 0.254) 1px solid;
   display: flex;
