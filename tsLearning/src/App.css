@@ -1,12 +1,68 @@
 * {
   margin: 0;
   padding: 0;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+    background-image: url(https://w0.peakpx.com/wallpaper/518/1005/HD-wallpaper-vecna-in-stranger-things-4.jpg);
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
 }
 
-h1, h2, h3, p {
+nav {
+  width:80%;
+  margin: 10px;
+  background: #000000e8;  
+  border-radius: 100px;
+  border: rgba(255, 255, 255, 0.254) 1px solid;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 40px;
+  padding-right: 30px;
+  position: fixed;
+  margin-bottom: 1000px;
+}
+
+input {
+  width: 300px;
+  height: 20px;
+  padding: 10px;
+  font-size: 17px;
+  border-radius: 100px;
+  outline: none;
+  border: rgb(140, 10, 10) 1px solid;
+  background: #000;
+  color: red;
+  font-family: "Courier New", Courier, monospace;
+  text-transform: uppercase;
+}
+
+#logo {
+  width: 150px;
+  height: auto;
+}
+
+h1,
+h2,
+h3,
+p {
   color: white;
-  max-width: 200px;
+  max-width: 210px;
   margin: auto;
+  background: transparent;
+}
+
+#about {
+  text-align: start;
+  text-transform: uppercase;
+  line-height: 24px;
+}
+
+#place,
+#name {
+  text-transform: uppercase;
 }
 
 img {
@@ -18,9 +74,16 @@ img {
   object-position: top;
 }
 
-#theRoot  {
+#theRoot {
   width: 100%;
-  background: #000;
+}
+
+#navId {
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  width: 80%;
+  margin-bottom: 120px;
 }
 
 #main {
@@ -29,11 +92,12 @@ img {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 8px;
+  gap: 10px;
 }
 
 .card {
   text-align: center;
   border-radius: 8px;
   box-shadow: 1px 1px 5px #ffffff60;
+  background: #000000b6;
 }

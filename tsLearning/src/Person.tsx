@@ -9,12 +9,12 @@ interface Person {
 
 function Person(props: Person) {
   return (
-    <div className="card">
+    <section className="card">
       <img src={props.img} alt="" />
-      <h3>{props.name}</h3>
-      <p>{props.about}</p>
-      <h2>{props.place}</h2>
-    </div>
+      <h3 id="name">{props.name}</h3>
+      <p id="about">{props.about}</p>
+      <h3 id="place">- {props.place}</h3>
+    </section>
   );
 }
 

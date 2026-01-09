@@ -2,30 +2,53 @@ import { useEffect, useState } from 'react';
 import './App.css';
 import Person from './Person';
 import { usersArr } from './utils/constants';
+import Navbar from './Navbar';
 
 function App() {
 
   let [isUser, setIsUser] = useState<object[]>([]);
+  let [searchText,setSearch] = useState<string>('');
 
-  const fetchUser =  () => {
+  const fetchUser =  () : void => {
     let res: object[] = usersArr;
-    setIsUser(res);
+    if(searchText !== '') {
+
+      const filteredPersons:object[] = res.filter((person) => {
+        if(person?.name.toLowerCase().includes(searchText.toLocaleLowerCase())) return person;
+      })
+      console.log()
+      setIsUser(filteredPersons)
+    } else {
+
+      setIsUser(res);
+    }
   }
 
   useEffect( ()  => {
     fetchUser()
-  },[])
+    console.log('h')
+  },[searchText])
 
   return (
     <div id='theRoot'>
-    <div id='main'>
+      <section id='navId'>
+      {
+        isUser &&
+        <Navbar setSearch={setSearch} searchText={searchText} />
+      }
+      </section>
+    <main id='main'>
     { isUser &&
       isUser.map((ele : any) => (
 
-        <Person name={ele.name} about={ele.about} place={ele.place} img={ele.photoUrl} />
+        <Person key={ele.name} name={ele.name} about={ele.about} place={ele.place} img={ele.photoUrl} />
       ))
     }
-    </div>
+
+    {isUser.length == 0 && 
+    <h3>No Charecter Found!!</h3>
+    }
+    </main>
     </div>
   )
 }

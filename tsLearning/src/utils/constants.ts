@@ -54,3 +54,6 @@ export const usersArr: object[] = [
     photoUrl : 'https://variety.com/wp-content/uploads/2025/11/StrangerThings_S5_0411_R.jpg'
   },
 ];
+
+
+export const Logo: string = 'https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Stranger_Things_logo.png/250px-Stranger_Things_logo.png'
